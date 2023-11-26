@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Poppins&display=swap');
+
+html, body, #project-page-container{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    padding: 0;
+    
+}
+
+
+
+#top-proj-cont{
+    background: rgb(221, 220, 220);
+    box-shadow: -12.79438px -10.2355px 39.66258px 0px rgba(255, 255, 255, 0.25), 8.95607px 12.79438px 39.66258px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-between;
+    min-height: 319px;
+    animation-name: fadein;
+    animation-duration: 1.7s;
+    height: fit-content;
+    width: 100%;
+    padding: 0vh 6.5vmax;
+    
+}
+
+#pro_text-c{
+    width: 400px;
+    height: fit-content;
+    animation: slide 1.5s;
+}
+
+h1,h3{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+#pro_text-c h1{
+    font-size: 40px;
+}
+
+#pro_text-c a{
+    font-family: 'Barlow Condensed', sans-serif;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(3, 3, 48);
+    padding: 5px 30px;
+    border: solid rgb(3, 3, 48) 2px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#pro_text-c a:hover{
+    font-size: 17px;
+    color: rgb(6, 6, 75);
+    background-color: white;
+    
+}
+
+#pro_text-c p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    text-align: justify;
+}
+
+#pro_text-c h1 span{
+    color: rgb(32, 3, 252);
+}
+
+#top-p-c-img{
+    width: 590px;
+    height: 319px;
+    background: url(images-project-page/top-proj-image.jpg);
+    background-size: cover;
+    background-position: center;
+    animation: slideri 1.5s;
+}
+
+#proj-text { 
+    box-sizing: border-box;
+    padding: 7vh 9vw; 
+    width: 100%;
+    opacity: 0;
+    background: linear-gradient(to bottom left,rgb(255, 238, 183) 10%,white);
+    animation: fadein 1.2s 0.7s forwards;
+    height: fit-content;
+    text-align: justify;
+}
+
+#proj-text h2{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+#proj-text p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+#other-proj-part{
+    box-sizing: border-box;
+    padding: 2vh 6vw;
+    background: radial-gradient(rgb(199, 199, 199) ,white);
+}
+
+#projects-disp{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 3vmin;
+    justify-content: space-around;
+}
+
+.proj-p-proj{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 360px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 18.706px;
+    background: #FFF;
+    box-shadow: -11.96668px -9.57335px 37.09673px 0px rgba(255, 255, 255, 0.25), 8.37668px 11.96668px 37.09673px 0px rgba(0, 0, 0, 0.25);
+}
+
+.p-disp-img{
+    width: 100%;
+    height: 55%;
+}
+
+.p-disp-cont{
+    width: 100%;
+    height: 45%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    text-align: justify;
+    box-sizing: border-box;
+    padding: 7px 15px;
+}
+
+#pdp-1{
+    background: url(images-project-page/proj-ex-1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#pdp-2{
+    background: url(images-project-page/proj-ex-2.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#pdp-3{
+    background-size: cover;
+    background-position: center;
+    background: url(images-project-page/proj-ex-3.jpeg);
+}
+
+
+@media screen and (max-width: 1156px) {
+    #top-proj-cont{
+        padding: 0px 4vw;
+    }
+    
+    #top-p-c-img{
+        width: 460px;
+        
+    }
+    
+}
+
+@media screen and (max-width: 964px) {
+    #top-p-c-img{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 848px) {
+    #pro_text-c{
+        width: 100%;
+    }
+    #top-p-c-content{
+        width: 100%;
+    }
+    #proj-text{
+        animation-delay: 1s;
+    }
+    p{
+        font-size: 12px;
+    }
+    
+    #top-proj-cont{
+        padding: 0px 8vw 20px 8vw;
+        gap: 50px;
+    }
+    #top-p-c-img{
+        width: 100%;
+    }
+    
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+    
+}
+
+@keyframes slide {
+    from{
+        margin-left: -100px;
+    }
+    to{
+        margin-left: 0px;
+    }
+}
+@keyframes slideri {
+    from{
+        margin-right: -200px;
+    }
+    to{
+        margin-right: 0px;
+    }
+}
